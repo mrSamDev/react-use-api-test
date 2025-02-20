@@ -3,6 +3,7 @@ import { createContext } from "react";
 import ThemeToggle from "./components/ThemeToggle";
 import UserProfile from "./components/UserProfile/UserProfile";
 import "./App.css";
+import Footer from "./components/Footer";
 
 export const ThemeContext = createContext("light");
 
@@ -28,6 +29,7 @@ function App() {
         <button onClick={changeUser}>Change User</button>
 
         <UserProfile userId={userId} />
+        <Footer />
       </div>
     </ThemeContext.Provider>
   );
